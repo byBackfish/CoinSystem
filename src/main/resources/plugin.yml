@@ -1,0 +1,10 @@
+name: CoinSystem
+main: de.bybackfish.coin.CoinSystem
+author: byBackfish
+version: 1.0.0
+description: Coin System made for Minecraft Legend. Uses SmartInvs and EzDB
+depend: [SmartInvs]
+api-version: 1.16
+commands:
+  bank:
+    description: Command to manage your Banks
