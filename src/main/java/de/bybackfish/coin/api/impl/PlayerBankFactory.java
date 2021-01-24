@@ -29,10 +29,11 @@ public class PlayerBankFactory {
         return new IPlayerBank() {
 
             @Override
-            public void transfer(IPlayerBank playerBankCoin, long amount) {
+            public void transfer(IPlayerBank playerBank, long amount) {
                 executorService.submit(() -> {
-                    playerBankCoin.addCoins(amount);
+                    playerBank.addCoins(amount);
                     removeCoins(amount);
+                    addHistory("Transfered Coins to " + playerBank.getName());
                 });
             }
 
