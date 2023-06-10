@@ -1,5 +1,5 @@
 # CoinSystem
-Simple Coin System made as a Test for Minecraft Legend
+Simple Coin System made for a coding test
 
 # Dependencies
 
